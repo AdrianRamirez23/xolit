@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\bin\Debug\net8.0\ReservationApp.Domain.deps.json
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\bin\Debug\net8.0\ReservationApp.Domain.dll
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\bin\Debug\net8.0\ReservationApp.Domain.pdb
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\obj\Debug\net8.0\ReservationApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\obj\Debug\net8.0\ReservationApp.Domain.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\obj\Debug\net8.0\ReservationApp.Domain.AssemblyInfo.cs
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\obj\Debug\net8.0\ReservationApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\obj\Debug\net8.0\ReservationApp.Domain.dll
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\obj\Debug\net8.0\refint\ReservationApp.Domain.dll
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\obj\Debug\net8.0\ReservationApp.Domain.pdb
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\obj\Debug\net8.0\ref\ReservationApp.Domain.dll
+C:\Users\user\source\repos\ReservationApp.Api\ReservationApp.Domain\obj\Debug\net8.0\ReservationApp.Domain.csproj.AssemblyReference.cache
