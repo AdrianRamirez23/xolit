@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "spnfOz2jnos=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\ReservationApp.Api\\ReservationApp.Domain\\ReservationApp.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}
