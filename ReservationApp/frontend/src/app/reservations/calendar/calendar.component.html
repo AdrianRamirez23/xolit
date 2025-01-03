@@ -1,0 +1,27 @@
+<div class="container mt-4">
+    <h2 class="mb-3">Calendario de Reservas</h2>
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Espacio</th>
+          <th>Usuario</th>
+          <th>Inicio</th>
+          <th>Fin</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reservation of reservations">
+          <td>{{ reservation.space.name }}</td>
+          <td>{{ reservation.user.fullName }}</td>
+          <td>{{ reservation.startDate | date: 'short' }}</td>
+          <td>{{ reservation.endDate | date: 'short' }}</td>
+          <td>
+           
+            <button class="btn btn-danger btn-sm" (click)="cancelReservation(reservation.id)">Cancelar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <h2>Nueva Reserva</h2>
+  <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="spaceId">Espacio</label>
+      <select class="form-control" id="spaceId" formControlName="spaceId">
+        <option *ngFor="let space of spaces" [value]="space.id">{{ space.name }}</option>
+      </select>
+      <div *ngIf="reservationForm.get('spaceId')?.invalid && reservationForm.get('spaceId')?.touched" class="text-danger">
+        El espacio es obligatorio.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="startDate">Fecha de Inicio</label>
+      <input type="datetime-local" id="startDate" class="form-control" formControlName="startDate" />
+      <div *ngIf="reservationForm.get('startDate')?.invalid && reservationForm.get('startDate')?.touched" class="text-danger">
+        Fecha de inicio válida requerida.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="endDate">Fecha de Fin</label>
+      <input type="datetime-local" id="endDate" class="form-control" formControlName="endDate" />
+      <div *ngIf="reservationForm.get('endDate')?.invalid && reservationForm.get('endDate')?.touched" class="text-danger">
+        Fecha de fin válida requerida.
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="reservationForm.invalid">Crear</button>
+  </form>
+</div>

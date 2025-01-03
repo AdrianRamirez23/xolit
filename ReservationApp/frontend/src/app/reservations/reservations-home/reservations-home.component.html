@@ -1,0 +1,56 @@
+<div class="container mt-4">
+    <div class="row">
+      <!-- Formulario de Nueva Reserva -->
+      <div class="col-md-4">
+        <h4 class="mb-3">Nueva Reserva</h4>
+        <form (ngSubmit)="createReservation()">
+          <div class="form-group">
+            <label for="spaceId">Espacio</label>
+            <select class="form-control" id="spaceId" [(ngModel)]="reservationForm.spaceId" name="spaceId" required>
+              <option *ngFor="let space of spaces" [value]="space.id">{{ space.name }}</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="startDate">Fecha de Inicio</label>
+            <input type="datetime-local" id="startDate" class="form-control" [(ngModel)]="reservationForm.startDate" name="startDate" required />
+          </div>
+  
+          <div class="form-group">
+            <label for="endDate">Fecha de Fin</label>
+            <input type="datetime-local" id="endDate" class="form-control" [(ngModel)]="reservationForm.endDate" name="endDate" required />
+          </div>
+    
+          <button type="submit" class="btn btn-success mt-3">Crear</button>
+        </form>
+      </div>
+  
+      <!-- Calendario de Reservas -->
+      <div class="col-md-8">
+        <h4 class="mb-3">Calendario de Reservas</h4>
+        <table class="table table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>Espacio</th>
+              <th>Usuario</th>
+              <th>Inicio</th>
+              <th>Fin</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let reservation of reservations">
+              <td>{{ reservation.space.name }}</td>
+              <td>{{ reservation.user.fullName }}</td>
+              <td>{{ reservation.startDate | date: 'short' }}</td>
+              <td>{{ reservation.endDate | date: 'short' }}</td>
+              <td>
+                <button class="btn btn-danger btn-sm" (click)="cancelReservation(reservation.id)">Cancelar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
