@@ -165,6 +165,4 @@ Este proyecto fue diseñado con **arquitectura hexagonal** en el backend y un en
    - **Backend**: Pruebas unitarias para repositorios y validaciones.
    - **Frontend**: Validación manual del flujo de usuario.
 
----
 
-Con esta documentación, tienes una guía completa para entender, configurar y extender el sistema de reservas. Si necesitas ayuda, ¡no dudes en preguntar! 😊
