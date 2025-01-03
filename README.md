@@ -119,7 +119,7 @@ Este proyecto fue diseñado con **arquitectura hexagonal** en el backend y un en
 2. **Pasos**:
    - Clonar el repositorio:
      ```bash
-     git clone https://github.com/tu-usuario/ReservationApp.git
+     https://github.com/AdrianRamirez23/xolit.git
      cd ReservationApp/frontend
      ```
    - Instalar dependencias:
