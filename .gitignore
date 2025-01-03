@@ -1,1 +1,15 @@
+# Archivos y carpetas de Node.js
+/frontend/node_modules
+/frontend/dist
+
+# Archivos de compilación de .NET
+/backend/bin
+/backend/obj
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Configuraciones locales
+*.vs
 
